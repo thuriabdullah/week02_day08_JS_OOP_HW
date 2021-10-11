@@ -27,7 +27,7 @@
     * override the `Animalsound` method and make it return `"dogs sounds is woof"`. 
 
 * create fish class (this will be child class) it shoud have:
-    * extend the parent constructor and add to it `owner, move` property. 
+    * extend the parent constructor and add to it `move` property. 
     * override the `eats` method and make it return `"fish eats flakes"`. 
     * create method called  `WayToMove` method and make it return `"fish swim "`. 
 
