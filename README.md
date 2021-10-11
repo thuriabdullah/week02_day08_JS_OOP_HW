@@ -14,7 +14,6 @@
 * create class name animal (this will be the parent class) it should have:
     * constructor with the animal name, age, image, and sound 
     * create method called `eats` that will return for example `"animal eats food"` where `animal` is the property `name`. 
-    * create method called `Animalsound` it should return the animal sound and name. 
 
 * create cat class (this will be child class) it shoud have:
     * extend the parent constructor and add to it `owner` property. 
@@ -27,9 +26,8 @@
     * override the `Animalsound` method and make it return `"dogs sounds is woof"`. 
 
 * create fish class (this will be child class) it shoud have:
-    * extend the parent constructor and add to it `move` property. 
+    * extend the parent constructor and add to it `color` property. 
     * override the `eats` method and make it return `"fish eats flakes"`. 
-    * create method called  `WayToMove` method and make it return `"fish swim "`. 
 
 * create object for dog, cat and fish classes and excute all the methods in the classes.  
 
