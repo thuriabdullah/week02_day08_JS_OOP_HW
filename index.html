@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    
+    <title>Animals</title>
+	<script src="Animals.js"></script>
+	
+	<style>
+		img{
+			width: 150px;
+			height: 150px;
+			border: 1px solid gray;
+			border-radius: 5px;
+			margin: 20px;
+			cursor: pointer;
+		}
+	</style>
+  </head>
+  <body>
+	
+	
+	<script>
+		document.write("<img onclick='details(1)' src='"+dog.image+"'/>");
+		document.write("<img onclick='details(2)' src='"+cat.image+"'/>");
+		document.write("<img onclick='details(3)' src='"+fish.image+"'/>");
+	</script>
+	
+	<div id="details">
+	</div>
+	
+	<script>
+		function details(obj)
+		{
+			var details_div = document.getElementById("details");
+			
+			var str = "<ul>";
+			if(obj == 1)
+			{
+				str += "<li>" + dog.eats() + "</li>";
+				str += "<li>" + dog.Animalsound() + "</li>";
+			}
+			
+			if(obj == 2)
+			{
+				str += "<li>" + cat.eats() + "</li>";
+				str += "<li>" + cat.Animalsound() + "</li>";
+			}
+			
+			if(obj == 3)
+			{
+				str += "<li>" + fish.eats() + "</li>";
+			}
+			
+			str += "</ul>";
+			
+			details_div.innerHTML = str;
+			
+		}
+	</script>
+  </body>
+</html>
